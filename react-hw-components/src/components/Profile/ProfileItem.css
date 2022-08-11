@@ -1,0 +1,38 @@
+.profile {
+    margin: 40px auto;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 1%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.avatar {
+    margin: 30px;
+    width: 200px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+    background-color: rgb(221, 221, 221);
+}
+
+.stats li {
+    text-align: center;
+}
+
+.quantity {
+    font-weight: bold;
+}
