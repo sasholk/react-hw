@@ -1,13 +1,15 @@
 import React from "react";
 import "./App.css";
 import { Profile } from "./Profile/Profile";
-import { StatisticsList } from "./Statistics/StatisticsList";
+import { Statistics } from "./Statistics/Statistics";
+import { FriendList } from "./FriendList/FriendList";
 
 export const App = () => {
     return (
         <div className="container">
             <Profile />
-            <StatisticsList />
+            <Statistics />
+            <FriendList />
         </div>
     );
 };
