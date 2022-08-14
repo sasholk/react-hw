@@ -1,5 +1,7 @@
 import React from "react";
 
+
+
 export const FriendListItem = ({ avatar, name, isOnline }) => {
     return (
         <li className="listItem">
