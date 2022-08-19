@@ -1,5 +1,5 @@
 .transaction-history {
-    margin: 0px auto;
+    margin: 40px auto;
     background-color: #fff;
     border-radius: 1%;
     table-layout: fixed;
@@ -25,8 +25,8 @@ th, td {
 
 tbody tr:nth-child(odd) {
     background-color: #ffffff;
-  }
+}
   
-  tbody tr:nth-child(even) {
+tbody tr:nth-child(even) {
     background-color: #dddddd;
-  }
+}

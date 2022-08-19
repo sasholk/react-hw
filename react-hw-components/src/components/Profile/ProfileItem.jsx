@@ -2,6 +2,8 @@ import React from "react";
 
 import "./ProfileItem.css";
 
+import PropTypes from 'prop-types';
+
 export const ProfileItem = ({ username, tag, location, avatar, stats: { followers, views, likes } }) => {
     return (
         <div className="profile">
@@ -32,3 +34,11 @@ export const ProfileItem = ({ username, tag, location, avatar, stats: { follower
         </div >
     );
 };
+
+ProfileItem.propTypes = {
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+    stats: PropTypes.objectOf(PropTypes.number).isRequired
+}
