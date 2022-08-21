@@ -4,15 +4,15 @@ import { StatisticsItem } from "./StatisticsItem";
 
 import dataList from "../../assets/data.json";
 
-import "./Statistics.css";
+import styles from "./Statistics.module.css";
 
 export const Statistics = () => {
     return (
         <>
-            <section className="statistics">
-                <h2 className="title">Upload stats</h2>
+            <section className={styles.statistics}>
+                <h2 className={styles.title}>Upload stats</h2>
 
-                <ul className="stat-list">
+                <ul className={styles.statList}>
                     {dataList.map(({ id, label, percentage }) => (
                         <StatisticsItem
                             key={id}

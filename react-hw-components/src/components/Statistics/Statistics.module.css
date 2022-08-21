@@ -11,7 +11,7 @@
     color: rgb(100, 100, 100);
 }
 
-.stat-list {
+.statList {
     display: flex;
     justify-content: space-around;
     list-style: none;

@@ -4,12 +4,12 @@ import transactions from "../../assets/transactions.json";
 
 import { TransactionItem } from "./TransactionItem";
 
-import "./TransactionHistory.css";
+import styles from "./TransactionHistory.module.css";
 
 export const TransactionHistory = () => {
     return (
-        <div className="container">
-            <table className="transaction-history">
+        <div className={styles.container}>
+            <table className={styles.transactionHistory}>
                 <thead>
                     <tr>
                         <th>Type</th>

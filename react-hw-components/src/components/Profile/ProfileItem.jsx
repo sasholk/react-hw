@@ -1,34 +1,34 @@
 import React from "react";
 
-import "./ProfileItem.css";
+import styles from "./ProfileItem.module.css";
 
 import PropTypes from 'prop-types';
 
 export const ProfileItem = ({ username, tag, location, avatar, stats: { followers, views, likes } }) => {
     return (
-        <div className="profile">
-            <div className="description" >
+        <div className={styles.profile}>
+            <div className={styles.description} >
                 <img
                     src={avatar}
                     alt="User avatar"
-                    className="avatar"
+                    className={styles.avatar}
                 />
-                <p className="name">{username}</p>
-                <p className="tag">{tag}</p>
-                <p className="location">{location}</p>
+                <p className={styles.name}>{username}</p>
+                <p className={styles.tag}>{tag}</p>
+                <p className={styles.location}>{location}</p>
             </div >
-            <ul className="stats">
+            <ul className={styles.stats}>
                 <li>
-                    <span className="label">Followers <br /></span>
-                    <span className="quantity">{followers}</span>
+                    <span className={styles.label}>Followers <br /></span>
+                    <span className={styles.quantity}>{followers}</span>
                 </li>
                 <li>
-                    <span className="label">Views <br /></span>
-                    <span className="quantity">{views}</span>
+                    <span className={styles.label}>Views <br /></span>
+                    <span className={styles.quantity}>{views}</span>
                 </li>
                 <li>
-                    <span className="label">Likes <br /></span>
-                    <span className="quantity">{likes}</span>
+                    <span className={styles.label}>Likes <br /></span>
+                    <span className={styles.quantity}>{likes}</span>
                 </li>
             </ul>
         </div >
