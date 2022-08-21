@@ -6,7 +6,7 @@ import friends from "../../assets/friends.json";
 
 import { FriendListItem } from "./FriendListItem";
 
-import styles from "./FriendList.module.css";
+// import styles from "./FriendList.module.css";
 
 const Section = styled.section`
     margin: 0 auto; 

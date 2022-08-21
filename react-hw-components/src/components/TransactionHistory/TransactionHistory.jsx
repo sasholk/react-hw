@@ -13,29 +13,28 @@ const Container = styled.div`
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-`;
+`
 
 const Table = styled.table`
     margin: 40px auto;
     background-color: #fff;
-    border-radius: 1%;
     table-layout: fixed;
     width: 70%;
     border-collapse: collapse;
     border: 2px solid rgb(221, 221, 221);
-`;
+`
 
 const Thead = styled.thead`
     background: rgb(73, 197, 255);
     padding: 50px;
-`;
+`
 
 const Th = styled.th`
     text-transform: uppercase;
     color: #fff;
     padding: 15px 120px;
     border-right: 1px solid #cecece;
-`;
+`
 
 const Tbody = styled.tbody`
     background-color: #ffffff;
