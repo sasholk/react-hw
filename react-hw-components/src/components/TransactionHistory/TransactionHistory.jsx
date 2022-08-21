@@ -1,24 +1,59 @@
 import React from "react";
 
+import styled from 'styled-components';
+
 import transactions from "../../assets/transactions.json";
 
 import { TransactionItem } from "./TransactionItem";
 
-import styles from "./TransactionHistory.module.css";
+// import styles from "./TransactionHistory.module.css";
+
+const Container = styled.div`
+    max-width: 1320px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+`;
+
+const Table = styled.table`
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 1%;
+    table-layout: fixed;
+    width: 70%;
+    border-collapse: collapse;
+    border: 2px solid rgb(221, 221, 221);
+`;
+
+const Thead = styled.thead`
+    background: rgb(73, 197, 255);
+    padding: 50px;
+`;
+
+const Th = styled.th`
+    text-transform: uppercase;
+    color: #fff;
+    padding: 15px 120px;
+    border-right: 1px solid #cecece;
+`;
+
+const Tbody = styled.tbody`
+    background-color: #ffffff;
+`
 
 export const TransactionHistory = () => {
     return (
-        <div className={styles.container}>
-            <table className={styles.transactionHistory}>
-                <thead>
+        <Container>
+            <Table>
+                <Thead>
                     <tr>
-                        <th>Type</th>
-                        <th>Amount</th>
-                        <th>Currency</th>
+                        <Th>Type</Th>
+                        <Th>Amount</Th>
+                        <Th>Currency</Th>
                     </tr>
-                </thead>
+                </Thead>
 
-                <tbody>
+                <Tbody>
                     {transactions.map(({ id, type, amount, currency }) => (
                         <TransactionItem
                             key={id}
@@ -28,9 +63,9 @@ export const TransactionHistory = () => {
                         />
                     ))}
 
-                </tbody>
-            </table>
-        </div>
+                </Tbody>
+            </Table>
+        </Container>
 
     );
 };
