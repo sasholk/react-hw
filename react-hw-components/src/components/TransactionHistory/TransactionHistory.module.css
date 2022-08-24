@@ -8,25 +8,25 @@
     border: 2px solid rgb(221, 221, 221);
 }
 
-thead {
+.transactionHistory thead {
     background: rgb(73, 197, 255);
     padding: 50px;
 }
 
-th {
+.transactionHistory th {
     text-transform: uppercase;
     color: #fff;
 }
 
-th, td {
+.transactionHistory th, .transactionHistory td {
     padding: 15px 120px;
     border-right: 1px solid #cecece;
 }
 
-tbody tr:nth-child(odd) {
+.transactionHistory tbody tr:nth-child(odd) {
     background-color: #ffffff;
 }
   
-tbody tr:nth-child(even) {
+.transactionHistory tbody tr:nth-child(even) {
     background-color: #dddddd;
 }
