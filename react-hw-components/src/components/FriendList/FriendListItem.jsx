@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import PropTypes from 'prop-types';
 
-import styles from "./FriendList.module.css";
+// import styles from "./FriendList.module.css";
 
 const Li = styled.li`
     background-color: #fff;
@@ -21,11 +21,19 @@ const Img = styled.img`
     width: 80px;
 `
 
+const Status = styled.span`
+    background-color: ${props => (props.isOnline ? "green" : "red")};
+    
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+`
+
 
 export const FriendListItem = ({ avatar, name, isOnline }) => {
     return (
         <Li>
-            <span className={isOnline ? styles.online : styles.offline}></span>
+            <Status isOnline={isOnline}></Status>
             <Img src={avatar} alt="User avatar" width="48" />
             <p>{name}</p>
         </Li >
